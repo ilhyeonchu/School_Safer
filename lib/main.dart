@@ -3,7 +3,9 @@ import 'dart:async';
 import 'login_main.dart';
 
 void main() {
-  runApp(SchoolSafer());
+  runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SchoolSafer()));
 }
 
 class SchoolSafer extends StatefulWidget {
@@ -26,9 +28,7 @@ class _SchoolSaferState extends State<SchoolSafer> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         body: Container(
           width: 411,
           height: 823,
@@ -152,7 +152,6 @@ class _SchoolSaferState extends State<SchoolSafer> {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }
